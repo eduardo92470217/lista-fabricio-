@@ -1,0 +1,295 @@
+import java.util.Scanner;
+
+public class main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+/*
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numero + i);
+        }
+
+        scanner.close();
+    }
+    }
+    
+    
+    */
+      
+ /*
+        System.out.print("Digite o valor de A (número real): ");
+        double A = scanner.nextDouble();
+
+        System.out.print("Digite o valor de B (número inteiro): ");
+        int B = scanner.nextInt();
+
+        double produto = 0;
+
+        if (B >= 0) {
+            for (int i = 0; i < B; i++) {
+                produto += A;
+            }
+        } else {
+            for (int i = 0; i > B; i--) {
+                produto -= A;
+            }
+        }
+
+        System.out.println("O produto de A por B é: " + produto);
+
+        scanner.close();
+    }
+}  
+      
+ */     
+         
+   /*   
+      
+       Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Digite a massa inicial (em gramas, ou 0 para sair): ");
+            double massaInicial = scanner.nextDouble();
+
+            if (massaInicial == 0) {
+                break;
+            }
+
+            double massaAtual = massaInicial;
+            int tempo = 0;
+
+            while (massaAtual >= 0.10) {
+                massaAtual *= 0.75; // Perde 25%, então fica 75%
+                tempo += 30;
+            }
+
+            System.out.println("Tempo necessário para a massa ficar menor que 0,10g: " + tempo + " segundos.");
+        }
+
+        scanner.close();
+    }
+}
+
+*/
+      
+   /*
+        Scanner scanner = new Scanner(System.in);
+        int numero, produtoImpar = 1, somaPar = 0;
+
+        System.out.println("Digite números inteiros positivos (negativo para sair):");
+
+        do {
+            numero = scanner.nextInt();
+            if (numero > 0) {
+                if (numero % 2 == 0) {
+                    somaPar += numero;
+                } else {
+                    produtoImpar *= numero;
+                }
+            }
+        } while (numero >= 0);
+
+        System.out.println("Produto dos números ímpares: " + produtoImpar);
+        System.out.println("Soma dos números pares: " + somaPar);
+
+        scanner.close();
+    }
+}  
+      
+      
+  */
+ /*     
+        Scanner scanner = new Scanner(System.in);
+        int idade, pessoas50Anos = 0, pessoas10a20 = 0;
+        double altura, peso, somaAlturas10a20 = 0, pesoInferior40 = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Pessoa " + i + ":");
+            System.out.print("Idade: ");
+            idade = scanner.nextInt();
+
+            System.out.print("Altura: ");
+            altura = scanner.nextDouble();
+
+            System.out.print("Peso: ");
+            peso = scanner.nextDouble();
+
+            if (idade > 50) {
+                pessoas50Anos++;
+            }
+
+            if (idade >= 10 && idade <= 20) {
+                pessoas10a20++;
+                somaAlturas10a20 += altura;
+            }
+
+            if (peso < 40) {
+                pesoInferior40++;
+            }
+        }
+
+        System.out.println("\nResultados:");
+        System.out.println("a) Quantidade de pessoas com mais de 50 anos: " + pessoas50Anos);
+        if (pessoas10a20 > 0) {
+            double mediaAlturas = somaAlturas10a20 / pessoas10a20;
+            System.out.println("b) Média das alturas entre 10 e 20 anos: " + mediaAlturas);
+        } else {
+            System.out.println("b) Não há pessoas entre 10 e 20 anos.");
+        }
+        double porcentagemPesoInferior40 = (pesoInferior40 / 10) * 100;
+        System.out.println("c) Porcentagem de pessoas com peso inferior a 40kg: " + porcentagemPesoInferior40 + "%");
+
+        scanner.close();
+    }
+}
+    */
+      /*
+      
+        Scanner scanner = new Scanner(System.in);
+
+        int killsTotal = 0;
+        int deathsTotal = 0;
+        int assistsTotal = 0;
+
+        while (true) {
+            System.out.println("Digite o número de kills da rodada:");
+            int killsRodada = scanner.nextInt();
+            System.out.println("Digite o número de deaths da rodada:");
+            int deathsRodada = scanner.nextInt();
+            System.out.println("Digite o número de assists da rodada:");
+            int assistsRodada = scanner.nextInt();
+
+            killsTotal += killsRodada;
+            deathsTotal += deathsRodada;
+            assistsTotal += assistsRodada;
+
+            if (killsTotal <= 5) {
+                System.out.println("Noob");
+            } else if (killsTotal >= 20) {
+                System.out.println("Master");
+            }
+            if (deathsTotal >= 20) {
+                System.out.println("Houston, we have a problem");
+            }
+            if (assistsTotal >= 20) {
+                System.out.println("Team work");
+            }
+
+            System.out.println("Há um vencedor? (sim/não)");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("sim")) {
+                break;
+            }
+        }
+
+        System.out.println("-" * 20);
+        System.out.println("Estatísticas finais:");
+        System.out.println("Kills total: " + killsTotal);
+        System.out.println("Deaths total: " + deathsTotal);
+        System.out.println("Assists total: " + assistsTotal);
+
+        scanner.close();
+    }
+}
+      */
+      
+      
+     /* 
+      
+       Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Menu de Formas Geométricas:");
+            System.out.println("1. Retângulo");
+            System.out.println("2. Diagonal Superior Esquerda");
+            System.out.println("3. Diagonal Superior Direita");
+            System.out.println("4. Diagonal Inferior Esquerda");
+            System.out.println("5. Diagonal Inferior Direita");
+            System.out.println("0. Sair");
+            System.out.print("Escolha uma opção: ");
+
+            int opcao = scanner.nextInt();
+
+            if (opcao == 0) {
+                break;
+            }
+
+            System.out.print("Digite a quantidade de colunas: ");
+            int colunas = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    retangulo(colunas);
+                    break;
+                case 2:
+                    diagonalSuperiorEsquerda(colunas);
+                    break;
+                case 3:
+                    diagonalSuperiorDireita(colunas);
+                    break;
+                case 4:
+                    diagonalInferiorEsquerda(colunas);
+                    break;
+                case 5:
+                    diagonalInferiorDireita(colunas);
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+            }
+
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+
+    static void retangulo(int colunas) {
+        for (int i = 1; i <= colunas; i++) {
+            for (int j = 1; j <= colunas; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void diagonalSuperiorEsquerda(int colunas) {
+        for (int i = 1; i <= colunas; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void diagonalSuperiorDireita(int colunas) {
+        for (int i = 1; i <= colunas; i++) {
+            for (int j = 1; j <= colunas - i + 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void diagonalInferiorEsquerda(int colunas) {
+        for (int i = 1; i <= colunas; i++) {
+            for (int j = 1; j <= colunas - i + 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void diagonalInferiorDireita(int colunas) {
+        for (int i = 1; i <= colunas; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+*/
